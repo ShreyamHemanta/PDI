@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hide Element Example</title>
+<style>
+  .hidden {
+    display: none; /* Initially hiding the element */
+  }
+</style>
+</head>
+<body>
+<h1>Hide Element Example</h1>
+<!-- Element to be hidden -->
+<div id="elementToHide">
+  Let us hide this element. Click the button below. 
+</div>
+<br>
+<!-- Button to trigger hiding -->
+<button onclick="hideElement()">Hide Element</button>
+
+<script>
+  function hideElement() {
+    var element = document.getElementById("elementToHide");
+    element.style.display = "none"; // Hides the element
+  }
+</script>
+
+</body>
+</html>

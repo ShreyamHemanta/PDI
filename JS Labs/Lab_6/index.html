@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Element Example</title>
+</head>
+<body>
+<h1>Adding an Element</h1>
+<hr>
+<!-- Button to add element -->
+<button onclick="addElement()">Add Element</button>
+<fieldset>
+  <legend>The Element will be added below</legend>
+  <div id="newElement"></div>
+</fieldset>
+<script>
+  function addElement() {
+    const newEle = document.getElementById("newElement")
+    // Create a new element
+    var newElement = document.createElement("div");
+    
+    // Set some text content for the new element
+    newElement.textContent = "This is a new element added dynamically!";
+    
+    // Append the new element to the body of the document
+    newEle.appendChild(newElement);
+  }
+</script>
+
+</body>
+</html>
