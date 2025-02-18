@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Basics</title>
+    <style>
+        #btn {
+            font-family: "helvetica neue", helvetica, sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: 2px solid blue;
+            background-color: cyan;
+            color: rgb(100 0 0 / 100%);
+            box-shadow: 1px 1px 2px rgb(0 0 200 / 40%);
+            border-radius: 10px;
+            padding: 3px 10px;
+            cursor: pointer;
+        }
+    </style>
+    <script type="text/javascript">
+        function onButtonClick(uname){
+            var opEle = document.getElementById("outputEle");
+            opEle.innerText = "The name entered is: "+ uname;
+        }
+    </script>
+</head>
+<body>
+    <h1>Example of Internal JavaScript</h1>
+    <label >Player 1: </label>
+    <input type="text" placeholder="Full Name" id="nameVal" />
+    <input id="btn" type="button" value="Submit" onclick="onButtonClick(nameVal.value)"/>
+
+    <p id="outputEle"></p>
+</body>
+</html>
