@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People & Contacts</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Display People & Contacts</h1>
+    
+    <div class="controls">
+        <button onclick="loadData()">Load Data</button>
+        <input type="text" id="searchInput" placeholder="Search by name...">
+        <button onclick="searchPerson()">Search</button>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="dataDisplay"></tbody>
+        </table>
+    </div>
+    <br><button onclick="sortById()">Sort by ID</button>
+    <button onclick="sortByName()">Sort by Name</button>
+    <button onclick="sortByEmail()">Sort by Email</button>
+</body>
+</html>
